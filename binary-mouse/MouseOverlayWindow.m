@@ -142,15 +142,26 @@
     self.m_currentWindowRect = [self getScreenSize];
     self.m_startingHeight    = self.m_currentWindowRect.size.height;
     
-    if (self != nil) {
-        [self setHasShadow: NO];
-        [self setOpaque: YES];
-        [self setBackgroundColor: [NSColor redColor]];
-        [self setLevel: NSScreenSaverWindowLevel - 1];
-        [self setAlphaValue: 0.2f];
-        [self setFrame: self.m_currentWindowRect display: YES];
+    if (self == nil) {
+        return nil;
     }
+    
+    [self setHasShadow: NO];
+    [self setOpaque: YES];
+    [self setBackgroundColor: [NSColor redColor]];
+    [self setLevel: NSScreenSaverWindowLevel - 1];
+    [self setAlphaValue: 0.2f];
+    [self setFrame: self.m_currentWindowRect display: YES];
+    
+    // Build our view :)
+    GridView *gv = [[GridView alloc] initWithFrame: self.m_currentWindowRect];
+    [[self contentView] addSubview: gv];
+
     return self;
+}
+
+- (void) drawRect: (CGRect) rect {
+    NSLog(@"DRAW RECT CALLED");
 }
 
 /*

@@ -664,9 +664,18 @@
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="5" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O9Z-Ff-5bZ" customClass="GridView">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="O9Z-Ff-5bZ" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="12" id="A8H-Bv-HzI"/>
+                </constraints>
             </view>
+            <point key="canvasLocation" x="357" y="489"/>
         </window>
     </objects>
 </document>

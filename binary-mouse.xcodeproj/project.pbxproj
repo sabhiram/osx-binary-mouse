@@ -12,6 +12,7 @@
 		721F635D1AFCAC730009B7B4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721F635B1AFCAC730009B7B4 /* MainMenu.xib */; };
 		721F63691AFCAC730009B7B4 /* binary_mouseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 721F63681AFCAC730009B7B4 /* binary_mouseTests.m */; };
 		721F63741AFCB27C0009B7B4 /* MouseOverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 721F63731AFCB27C0009B7B4 /* MouseOverlayWindow.m */; };
+		72D2FFD01AFD99DA00B65993 /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D2FFCF1AFD99DA00B65993 /* GridView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 		721F63681AFCAC730009B7B4 /* binary_mouseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = binary_mouseTests.m; sourceTree = "<group>"; };
 		721F63721AFCB27C0009B7B4 /* MouseOverlayWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MouseOverlayWindow.h; sourceTree = "<group>"; };
 		721F63731AFCB27C0009B7B4 /* MouseOverlayWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MouseOverlayWindow.m; sourceTree = "<group>"; };
+		72D2FFCE1AFD99DA00B65993 /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridView.h; sourceTree = "<group>"; };
+		72D2FFCF1AFD99DA00B65993 /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				721F63521AFCAC730009B7B4 /* Supporting Files */,
 				721F63721AFCB27C0009B7B4 /* MouseOverlayWindow.h */,
 				721F63731AFCB27C0009B7B4 /* MouseOverlayWindow.m */,
+				72D2FFCE1AFD99DA00B65993 /* GridView.h */,
+				72D2FFCF1AFD99DA00B65993 /* GridView.m */,
 			);
 			path = "binary-mouse";
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				721F63741AFCB27C0009B7B4 /* MouseOverlayWindow.m in Sources */,
+				72D2FFD01AFD99DA00B65993 /* GridView.m in Sources */,
 				721F63581AFCAC730009B7B4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,7 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = binary-mouse/Info.plist;
+				INFOPLIST_FILE = "binary-mouse/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -340,7 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = binary-mouse/Info.plist;
+				INFOPLIST_FILE = "binary-mouse/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
