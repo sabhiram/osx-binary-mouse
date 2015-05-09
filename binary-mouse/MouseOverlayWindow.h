@@ -10,4 +10,7 @@
 
 @interface MouseOverlayWindow : NSWindow
 
+@property NSRect m_currentWindowRect;
+@property float  m_startingHeight;
+
 @end
