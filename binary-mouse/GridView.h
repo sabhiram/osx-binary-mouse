@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MouseOverlayWindow.h"
 
 @interface GridView : NSView
 

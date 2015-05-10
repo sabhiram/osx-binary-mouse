@@ -15,6 +15,8 @@
     NSRect screenRect    = [mainScreen visibleFrame];
     
     NSLog(@"Screen %@", NSStringFromRect(screenRect));
+    screenRect.size.width /= 2;
+    screenRect.origin.x += screenRect.size.width;
     return screenRect;
 }
 
@@ -155,13 +157,9 @@
     
     // Build our view :)
     GridView *gv = [[GridView alloc] initWithFrame: self.m_currentWindowRect];
-    [[self contentView] addSubview: gv];
-
+    [self.contentView addSubview: gv];
+    [gv setNeedsDisplay:YES];
     return self;
-}
-
-- (void) drawRect: (CGRect) rect {
-    NSLog(@"DRAW RECT CALLED");
 }
 
 /*
@@ -169,7 +167,6 @@
  so that controls in this window will be enabled.
  */
 - (BOOL) canBecomeKeyWindow {
-    
     return YES;
 }
 
