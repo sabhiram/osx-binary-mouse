@@ -122,6 +122,14 @@
             [NSApp terminate: self];
             break;
         
+        // M - with Cmd + Ctrl - this opens the app window and resizes it
+        case 46:
+            if ([event modifierFlags] & (NSControlKeyMask | NSCommandKeyMask)) {
+                NSLog(@"Hello");
+                break;
+            }
+
+        
         default:
             [super keyDown: event];
             break;
@@ -150,9 +158,9 @@
     
     [self setHasShadow: NO];
     [self setOpaque: YES];
-    [self setBackgroundColor: [NSColor redColor]];
+    [self setBackgroundColor: [NSColor colorWithRed:175.0/255.0 green:238/255.0 blue:238/255.0 alpha:1.0]];
     [self setLevel: NSScreenSaverWindowLevel - 1];
-    [self setAlphaValue: 0.2f];
+    [self setAlphaValue: 0.55f];
     [self setFrame: self.m_currentWindowRect display: YES];
     
     // Build our view :)
